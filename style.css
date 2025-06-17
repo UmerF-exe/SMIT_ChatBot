@@ -26,20 +26,19 @@
     height: auto;
     text-align: center;
     background-color: aqua;
-    position: fixed;
+    /* position: fixed; */
     box-sizing: border-box;
     border-radius: 10px;
 }
 .dispalyChat{
     width: 100%;
     height: auto;
-    margin-top: 10%;
+    /* margin-top: 10%; */
     background-color: aquamarine;
 }
 .dispalyChat>ul{
     margin-left: 20px;
-    overflow: scroll;
-    scroll-behavior: unset;
+    overflow: hidden;
 }
 .dispalyChat>ul>li{
     list-style: none;
@@ -47,8 +46,8 @@
 .inputMessage{
     width: 375px;
     height: auto;
-    position: fixed;
-    bottom: 10%;
+    /* position: fixed;
+    bottom: 10%; */
 }
 .inputMessage>input{
     width: 100%;
