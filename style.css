@@ -10,7 +10,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #0f0f20;
+    background-color: #1080c1;
 }
 .chatBot{
     width: 350px;
@@ -20,22 +20,38 @@
     box-sizing: border-box;
     box-shadow: -5px -5px 15px rgb(250, 250, 247), 5px 5px 15px rgb(251, 251, 251)
 }
-.chatBot_Title{
+.chatBot_header{
     width: 350px;
     height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
     text-align: center;
     color: #fff;
     position: fixed;
-    padding: 20px 0px;
+    padding: 10px;
     box-sizing: border-box;
-    border-bottom: 1px solid#fff;
+}
+.smitlogo{
+    width: 100px;
+    height: 55px;
+    padding: 10px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    background-color: #fff;
+    margin-right: 10px;
+}
+.smitlogo>img{
+    width: 100%;
+    height: 100%;
 }
 .displayChat{
     width: 100%;
     height: 68vh;
     display: flex;
     flex-direction: column;
-    overflow-y: auto;
     margin-top: 20%;
     color: #000;
     background-color: #fff;
@@ -43,8 +59,9 @@
 #display{
     display: flex;
     flex-direction: column;
+    overflow-y: auto;
 }
-#display>button{
+#display>.left>button{
     width: 150px;
     padding: 5px;
     margin: 2px 10px;
@@ -54,23 +71,34 @@
     color: #fff;
     background-color: #90c21a; 
 }
-#display>ul>li{
+#display>.left>ul>li{
     margin-left: 20px;
     margin-right: 80px;
+    color: #90c21a;
 }
 .right{
     text-align: right;
     padding: 5px;
     margin: 10px 0px;
     margin-left: 80px;
+    color: white;
+    background-color: #90c21a;
     box-sizing: content-box;
+    border-bottom-left-radius: 10px;
+    border-Top-left-radius: 10px;
+    border-Top-right-radius: 10px;
 }
 .left{
     text-align: left;
     padding: 5px;
-    margin: 10px 0px;
+    margin-left: 5px;
+    margin-bottom: 10px;
     margin-right: 80px;
     box-sizing: content-box;
+    border: 1px solid #90c21a;
+    border-bottom-right-radius: 10px;
+    border-Top-right-radius: 10px;
+    border-Top-left-radius: 10px;
 }
 .inputMessage{
     width: 100%;
